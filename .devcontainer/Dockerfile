@@ -1,6 +1,6 @@
-FROM rocker/r-ver:4.4 AS base
+FROM rocker/r-ver:4.4.1 AS base
 RUN /rocker_scripts/setup_R.sh \
-    https://packagemanager.posit.co/cran/__linux__/jammy/2024-08-01
+    https://packagemanager.posit.co/cran/__linux__/jammy/2024-11-01
     # https://code.visualstudio.com/docs/devcontainers/create-dev-container#:~:text=Note%3A%20The%20DEBIAN_FRONTEND%20export%20avoids%20warnings%20when%20you%20go%20on%20to%20work%20with%20your%20container.
 RUN /rocker_scripts/install_quarto.sh 1.5.56
 RUN /rocker_scripts/install_pandoc.sh 3.2
@@ -32,8 +32,11 @@ RUN install2.r --error \
     ggplot2 \
     gsDesign \
     gtsummary \
+    haven \
     here \
+    janitor \
     knitr \
+    labelled \
     lme4 \
     lmerTest \
     memoise \
@@ -50,6 +53,7 @@ RUN install2.r --error \
     rmarkdown \
     rpact \
     rstan \
+    skimr \
     tarchetypes \
     targets\
     tibble \
@@ -64,7 +68,8 @@ FROM base AS development
 RUN apt-get update && apt-get -y install software-properties-common
 RUN add-apt-repository -y ppa:deadsnakes/ppa && apt update
 RUN apt-get -y install python3.11 python3-pip git
-RUN pip3 install radian
+RUN apt-get -y install pipx
+RUN pipx install radian
 # end install radian
 
 # Packages needed for development with vscode

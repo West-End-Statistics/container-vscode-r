@@ -1,6 +1,6 @@
 {
     "r.bracketedPaste": true,
-    "r.rterm.linux": "/usr/local/bin/radian",
+    "r.rterm.linux": "/root/.local/pipx/venvs/radian/bin/radian",
     "r.plot.useHttpgd": true,
     "editor.formatOnSave": true
 }
