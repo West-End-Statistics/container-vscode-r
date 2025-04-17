@@ -81,3 +81,14 @@ RUN install2.r --error \
 # Other packages to install - move away from dev when ready
 # RUN install2.r --error \
 #     bayesDP furrr memoise plotly
+
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+
+USER $USERNAME
+RUN pipx install radian
+
