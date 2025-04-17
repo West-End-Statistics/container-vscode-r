@@ -12,7 +12,8 @@
 				"ms-azuretools.vscode-docker",
 				"christian-kohler.path-intellisense",
 				"mechatroner.rainbow-csv",
-				"ms-vscode.live-server"
+				"ms-vscode.live-server",
+				"ShahilKumar.docxreader"
 			]
 		}
 	}
