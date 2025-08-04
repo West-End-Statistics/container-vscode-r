@@ -1,5 +1,9 @@
-FROM westendstatistics/rstats-dev:r4.5.1-20250623 AS development
+FROM westendstatistics/rstats-dev:r4.5.1-20250804 AS base
 
+
+USER root
 # Other packages to install - move away from dev when ready
 # RUN install2.r --error \
 #     bayesDP furrr memoise plotly
+
+USER vscode
