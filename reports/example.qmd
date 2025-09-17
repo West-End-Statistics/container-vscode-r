@@ -1,0 +1,25 @@
+---
+title: Example QMD Document
+format: 
+  docx:
+    toc: true
+    reference-doc: resources/template.docx
+number-sections: true
+crossref:
+  chapters: true
+editor: source
+csl: resources/american-medical-association.csl
+bibliography: resources/references.bib
+---
+
+\newpage
+
+# Introduction
+
+This is a template using R version @rcoreteam2020.
+
+
+# References
+
+::: {#refs}
+:::

@@ -1,0 +1,5 @@
+
+# Generally ignore outputs, but may change
+*.docx
+*.pdf
+*.html

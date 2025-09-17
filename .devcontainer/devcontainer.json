@@ -2,7 +2,7 @@
 	"name": "${localWorkspaceFolderBasename}",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"target": "development"
+		"target": "base"
 	},
 	"customizations": {
 		"vscode": {
