@@ -1,4 +1,4 @@
-FROM westendstatistics/rstats-dev:r4.5.2-20260120 AS base
+FROM westendstatistics/rstats-dev:r4.5.2-20260320 AS base
 
 USER root
 # Other packages to install - move away from dev when ready
