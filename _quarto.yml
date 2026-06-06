@@ -1,6 +1,8 @@
 project:
   title: "container-vscode-r"
   output-dir: "output"
+  post-render:
+    - "scripts/post_render.R"
 
 
 

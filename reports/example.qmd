@@ -4,6 +4,7 @@ format:
   docx:
     toc: true
     reference-doc: resources/template.docx
+    tbl-caption-location: bottom
 number-sections: true
 crossref:
   chapters: true
@@ -16,8 +17,14 @@ bibliography: resources/references.bib
 
 # Introduction
 
+```{r}
+targets::tar_source(here::here("R"))
+```
+
 This is a template using R version @rcoreteam2020.
 
+
+{{< cmt "comment text" highlight = "text to annotate" >}}
 
 # References
 

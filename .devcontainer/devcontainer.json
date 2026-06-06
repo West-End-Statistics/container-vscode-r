@@ -4,6 +4,7 @@
 		"dockerfile": "Dockerfile",
 		"target": "base"
 	},
+	"postCreateCommand": "bash .devcontainer/post-create.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -15,8 +16,9 @@
 				"ms-vscode.live-server",
 				"ShahilKumar.docxreader",
 				"streetsidesoftware.code-spell-checker",
+				"muhammad-ahmad.xlsx-viewer",
 				"GitHub.vscode-pull-request-github",
-				"muhammad-ahmad.xlsx-viewer"
+				"anthropic.claude-code"
 			]
 		}
 	}
