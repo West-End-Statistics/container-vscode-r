@@ -4,7 +4,7 @@ format:
   docx:
     toc: true
     reference-doc: resources/template.docx
-    tbl-caption-location: bottom
+    tbl-cap-location: bottom
 number-sections: true
 crossref:
   chapters: true
